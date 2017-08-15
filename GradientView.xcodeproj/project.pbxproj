@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		30CD89701EF8196F00C94B03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CD896F1EF8196F00C94B03 /* AppDelegate.swift */; };
-		30CD89721EF8196F00C94B03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CD89711EF8196F00C94B03 /* ViewController.swift */; };
-		30CD89751EF8196F00C94B03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CD89731EF8196F00C94B03 /* Main.storyboard */; };
 		30CD89771EF8196F00C94B03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30CD89761EF8196F00C94B03 /* Assets.xcassets */; };
 		30CD897A1EF8196F00C94B03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CD89781EF8196F00C94B03 /* LaunchScreen.storyboard */; };
+		30CD89821EF819E900C94B03 /* CAGradientLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CD89811EF819E900C94B03 /* CAGradientLayerVC.swift */; };
+		30CD89841EF822A400C94B03 /* CGGradientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CD89831EF822A400C94B03 /* CGGradientVC.swift */; };
+		30CD89881EF8290B00C94B03 /* CGGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CD89871EF8290B00C94B03 /* CGGradientView.swift */; };
+		30CD898C1EF82EE400C94B03 /* AnimatingGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CD898B1EF82EE400C94B03 /* AnimatingGradientViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30CD896C1EF8196F00C94B03 /* GradientView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradientView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30CD896F1EF8196F00C94B03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30CD89711EF8196F00C94B03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		30CD89741EF8196F00C94B03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30CD89761EF8196F00C94B03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30CD89791EF8196F00C94B03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30CD897B1EF8196F00C94B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30CD89811EF819E900C94B03 /* CAGradientLayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAGradientLayerVC.swift; sourceTree = "<group>"; };
+		30CD89831EF822A400C94B03 /* CGGradientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGGradientVC.swift; sourceTree = "<group>"; };
+		30CD89871EF8290B00C94B03 /* CGGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGGradientView.swift; sourceTree = "<group>"; };
+		30CD898B1EF82EE400C94B03 /* AnimatingGradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingGradientViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,39 @@
 			isa = PBXGroup;
 			children = (
 				30CD896F1EF8196F00C94B03 /* AppDelegate.swift */,
-				30CD89711EF8196F00C94B03 /* ViewController.swift */,
-				30CD89731EF8196F00C94B03 /* Main.storyboard */,
+				30CD898A1EF82EC400C94B03 /* GradientAnimation */,
+				30CD89851EF828DB00C94B03 /* CALayer */,
+				30CD89861EF828ED00C94B03 /* CG */,
 				30CD89761EF8196F00C94B03 /* Assets.xcassets */,
 				30CD89781EF8196F00C94B03 /* LaunchScreen.storyboard */,
 				30CD897B1EF8196F00C94B03 /* Info.plist */,
 			);
 			path = GradientView;
+			sourceTree = "<group>";
+		};
+		30CD89851EF828DB00C94B03 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				30CD89811EF819E900C94B03 /* CAGradientLayerVC.swift */,
+			);
+			name = CALayer;
+			sourceTree = "<group>";
+		};
+		30CD89861EF828ED00C94B03 /* CG */ = {
+			isa = PBXGroup;
+			children = (
+				30CD89831EF822A400C94B03 /* CGGradientVC.swift */,
+				30CD89871EF8290B00C94B03 /* CGGradientView.swift */,
+			);
+			name = CG;
+			sourceTree = "<group>";
+		};
+		30CD898A1EF82EC400C94B03 /* GradientAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				30CD898B1EF82EE400C94B03 /* AnimatingGradientViewController.swift */,
+			);
+			name = GradientAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +154,6 @@
 			files = (
 				30CD897A1EF8196F00C94B03 /* LaunchScreen.storyboard in Resources */,
 				30CD89771EF8196F00C94B03 /* Assets.xcassets in Resources */,
-				30CD89751EF8196F00C94B03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30CD89721EF8196F00C94B03 /* ViewController.swift in Sources */,
+				30CD89821EF819E900C94B03 /* CAGradientLayerVC.swift in Sources */,
 				30CD89701EF8196F00C94B03 /* AppDelegate.swift in Sources */,
+				30CD898C1EF82EE400C94B03 /* AnimatingGradientViewController.swift in Sources */,
+				30CD89881EF8290B00C94B03 /* CGGradientView.swift in Sources */,
+				30CD89841EF822A400C94B03 /* CGGradientVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		30CD89731EF8196F00C94B03 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30CD89741EF8196F00C94B03 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		30CD89781EF8196F00C94B03 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -269,10 +293,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WGU9364JK2;
+				DEVELOPMENT_TEAM = 2MRG3U4CR7;
 				INFOPLIST_FILE = GradientView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HarryCodes.GradientView;
+				PRODUCT_BUNDLE_IDENTIFIER = AppsInnovation.GradientView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -283,10 +307,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WGU9364JK2;
+				DEVELOPMENT_TEAM = 2MRG3U4CR7;
 				INFOPLIST_FILE = GradientView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HarryCodes.GradientView;
+				PRODUCT_BUNDLE_IDENTIFIER = AppsInnovation.GradientView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,6 +336,7 @@
 				30CD89801EF8196F00C94B03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
