@@ -1,6 +1,6 @@
 # AnimatedGradientView
 
-In this app, I use 2 techniques to create a gradient background:
+In this app, I use 2 techniques to create 2 gradient backgrounds:
 * Use a CAGradientLayer
 * Use a CGGradientView
 
